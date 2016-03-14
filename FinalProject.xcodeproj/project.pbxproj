@@ -8,20 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		34FB446F1C8DD71300238009 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FB446E1C8DD71300238009 /* AppDelegate.swift */; };
-		34FB44711C8DD71300238009 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FB44701C8DD71300238009 /* ViewController.swift */; };
+		34FB44711C8DD71300238009 /* SynthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FB44701C8DD71300238009 /* SynthViewController.swift */; };
 		34FB44741C8DD71300238009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FB44721C8DD71300238009 /* Main.storyboard */; };
 		34FB44761C8DD71300238009 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34FB44751C8DD71300238009 /* Assets.xcassets */; };
 		34FB44791C8DD71300238009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FB44771C8DD71300238009 /* LaunchScreen.storyboard */; };
+		34FB44851C8DD7A300238009 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FB44841C8DD7A300238009 /* AudioKit.framework */; };
+		34FB44861C8DD7A300238009 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34FB44841C8DD7A300238009 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		34FB44831C8DD72900238009 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				34FB44861C8DD7A300238009 /* AudioKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3415B4FF1C9637C3001BBD5D /* sawPiano1.exs */ = {isa = PBXFileReference; lastKnownFileType = file; path = sawPiano1.exs; sourceTree = "<group>"; };
 		34FB446B1C8DD71300238009 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FB446E1C8DD71300238009 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		34FB44701C8DD71300238009 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		34FB44701C8DD71300238009 /* SynthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynthViewController.swift; sourceTree = "<group>"; };
 		34FB44731C8DD71300238009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34FB44751C8DD71300238009 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34FB44781C8DD71300238009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34FB447A1C8DD71300238009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34FB44841C8DD7A300238009 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +47,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34FB44851C8DD7A300238009 /* AudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3415B4FE1C962F5B001BBD5D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3415B4FF1C9637C3001BBD5D /* sawPiano1.exs */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		34FB44621C8DD71300238009 = {
 			isa = PBXGroup;
 			children = (
+				34FB44841C8DD7A300238009 /* AudioKit.framework */,
 				34FB446D1C8DD71300238009 /* FinalProject */,
 				34FB446C1C8DD71300238009 /* Products */,
+				3415B4FE1C962F5B001BBD5D /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				34FB446E1C8DD71300238009 /* AppDelegate.swift */,
-				34FB44701C8DD71300238009 /* ViewController.swift */,
+				34FB44701C8DD71300238009 /* SynthViewController.swift */,
 				34FB44721C8DD71300238009 /* Main.storyboard */,
 				34FB44751C8DD71300238009 /* Assets.xcassets */,
 				34FB44771C8DD71300238009 /* LaunchScreen.storyboard */,
@@ -74,6 +103,7 @@
 				34FB44671C8DD71300238009 /* Sources */,
 				34FB44681C8DD71300238009 /* Frameworks */,
 				34FB44691C8DD71300238009 /* Resources */,
+				34FB44831C8DD72900238009 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,7 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34FB44711C8DD71300238009 /* ViewController.swift in Sources */,
+				34FB44711C8DD71300238009 /* SynthViewController.swift in Sources */,
 				34FB446F1C8DD71300238009 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +279,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FinalProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = scj0055.FinalProject;
@@ -260,6 +294,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FinalProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = scj0055.FinalProject;
@@ -286,6 +324,7 @@
 				34FB447F1C8DD71300238009 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
