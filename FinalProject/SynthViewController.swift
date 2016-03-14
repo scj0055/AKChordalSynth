@@ -13,13 +13,13 @@ class SynthViewController: UIViewController {
     
     //
     /*
-    INSTANCE VARIABLES
+    MARK: INSTANCE VARIABLES
     */
     //
     
     var sampler = AKSampler()
     var currentOctave = 5
-    var currentPatch = "sawPiano1"
+    var currentPatch = "BELL"
     var majorOrMinorSeventh = "minor"
     
     var note1 = 1
@@ -29,13 +29,14 @@ class SynthViewController: UIViewController {
     /*
     //
     
-    OUTLET CONNECTIONS
+    MARK: OUTLET CONNECTIONS
     //
     */
+    @IBOutlet weak var currentPatchName: UILabel!
     
     /*
     //
-    LIFECYCLE
+    MARK: LIFECYCLE
     //
     */
     
@@ -43,16 +44,14 @@ class SynthViewController: UIViewController {
         
         super.viewDidLoad()
         
-        let bundle = NSBundle.mainBundle()
-        let samplerFile = bundle.pathForResource("sawPiano1", ofType: "exs")
-        
-        print(samplerFile!)
-        
-        sampler.loadEXS24("sawPiano1")
+        loadPatch(currentPatch)
         
         // start AudioKit
         AudioKit.output = sampler
         AudioKit.start()
+        
+        print(NSBundle.mainBundle().resourcePath)
+        
         
     }
 
@@ -63,15 +62,19 @@ class SynthViewController: UIViewController {
     
     /*
     //
-    HELPER FUNCTIONS
+    MARK: HELPER FUNCTIONS
     //
     */
     
-    
+    func loadPatch(patchToLoad: String) {
+        sampler.loadWav(patchToLoad)
+        self.currentPatch = patchToLoad
+        self.currentPatchName.text = "Current Patch: \(patchToLoad)"
+    }
     
     /*
     //
-    SOUND CONTROL
+    MARK: SOUND CONTROL
     //
     */
     
@@ -367,7 +370,7 @@ class SynthViewController: UIViewController {
     
     /*
     //
-    PAN GESTURE
+    MARK: PAN GESTURE
     //
     */
     
@@ -394,7 +397,7 @@ class SynthViewController: UIViewController {
     
     /*
     //
-    OUTLET ACTIONS
+    MARK: OUTLET ACTIONS
     //
     */
     
@@ -414,10 +417,6 @@ class SynthViewController: UIViewController {
         
         prepareToPlayChord(sender.tag, playOrStop: "stop")
         
-    }
-    
-    @IBAction func testDrag(sender: UIButton) {
-        print("touched!")
     }
     
 
