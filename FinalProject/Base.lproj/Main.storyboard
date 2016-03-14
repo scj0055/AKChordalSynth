@@ -13,10 +13,60 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bfa-FP-FKJ" customClass="RibbonViewController" customModule="FinalProject" customModuleProvider="target">
+                                <rect key="frame" x="865" y="0.0" width="159" height="768"/>
+                                <subviews>
+                                    <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2g-Cf-5Ix">
+                                        <rect key="frame" x="0.0" y="706" width="159" height="62"/>
+                                        <state key="normal" title="Button" image="button1_horiz"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBY-Bo-rGP">
+                                        <rect key="frame" x="0.0" y="578" width="159" height="62"/>
+                                        <state key="normal" title="Button" image="button1_horiz"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ase-H1-J6d">
+                                        <rect key="frame" x="0.0" y="508" width="159" height="62"/>
+                                        <state key="normal" title="Button" image="button1_horiz"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxb-A6-zsC">
+                                        <rect key="frame" x="0.0" y="438" width="159" height="62"/>
+                                        <state key="normal" title="Button" image="button1_horiz"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGi-dq-xdf">
+                                        <rect key="frame" x="0.0" y="368" width="159" height="62"/>
+                                        <state key="normal" title="Button" image="button1_horiz"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YcT-Qa-dSK">
+                                        <rect key="frame" x="0.0" y="298" width="159" height="62"/>
+                                        <state key="normal" title="Button" image="button1_horiz"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jA-vc-fl7">
+                                        <rect key="frame" x="0.0" y="228" width="159" height="62"/>
+                                        <state key="normal" title="Button" image="button1_horiz"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJy-DR-ynk">
+                                        <rect key="frame" x="0.0" y="158" width="159" height="62"/>
+                                        <state key="normal" title="Button" image="button1_horiz"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oh1-O0-acP">
+                                        <rect key="frame" x="0.0" y="88" width="159" height="62"/>
+                                        <state key="normal" title="Button" image="button1_horiz"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPF-Gj-djf">
+                                        <rect key="frame" x="0.0" y="18" width="159" height="62"/>
+                                        <state key="normal" title="Button" image="button1_horiz"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qap-fd-5oL">
+                                        <rect key="frame" x="0.0" y="648" width="159" height="62"/>
+                                        <state key="normal" title="Button" image="button1_horiz"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ce1-2Z-yK6">
                                 <rect key="frame" x="0.0" y="254" width="857" height="514"/>
                                 <subviews>
@@ -24,7 +74,7 @@
                                         <rect key="frame" x="-16" y="367" width="94" height="141"/>
                                         <state key="normal" title="DbSeventh" image="button3"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uAY-e9-P8G"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="s5I-qn-1h0"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wFE-8e-ETx"/>
                                         </connections>
                                     </button>
@@ -32,7 +82,7 @@
                                         <rect key="frame" x="48" y="63" width="94" height="141"/>
                                         <state key="normal" title="AbMajor" image="button1"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HRF-TJ-aRY"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="UNB-Tf-kmL"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lik-TR-zeN"/>
                                         </connections>
                                     </button>
@@ -40,7 +90,7 @@
                                         <rect key="frame" x="48" y="218" width="94" height="141"/>
                                         <state key="normal" title="AbMinor" image="button2"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xeV-os-Jvx"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="bql-ee-xNi"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OQK-ba-SK2"/>
                                         </connections>
                                     </button>
@@ -48,7 +98,7 @@
                                         <rect key="frame" x="48" y="367" width="94" height="141"/>
                                         <state key="normal" title="AbSeventh" image="button3"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mYp-9C-NaJ"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="zdf-rS-4ON"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8AB-Yb-AXp"/>
                                         </connections>
                                     </button>
@@ -56,7 +106,7 @@
                                         <rect key="frame" x="114" y="63" width="94" height="141"/>
                                         <state key="normal" title="EbMajor" image="button1"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9tG-f2-OXz"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="JXu-dM-dZh"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ziw-s6-1yF"/>
                                         </connections>
                                     </button>
@@ -64,7 +114,7 @@
                                         <rect key="frame" x="114" y="218" width="94" height="141"/>
                                         <state key="normal" title="EbMinor" image="button2"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q6T-ow-uoN"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="zmO-Nz-3fO"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gQj-nn-qR2"/>
                                         </connections>
                                     </button>
@@ -72,15 +122,15 @@
                                         <rect key="frame" x="114" y="367" width="94" height="141"/>
                                         <state key="normal" title="EbSeventh" image="button3"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uWc-JA-h9J"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="uy6-qq-0MQ"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PDQ-6l-Scd"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmN-TA-SfF">
-                                        <rect key="frame" x="184" y="63" width="94" height="141"/>
+                                        <rect key="frame" x="183" y="63" width="94" height="141"/>
                                         <state key="normal" title="BbMajor" image="button1"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cbN-hb-HvS"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="Edn-XE-yLb"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pdb-Do-a7s"/>
                                         </connections>
                                     </button>
@@ -88,7 +138,7 @@
                                         <rect key="frame" x="183" y="218" width="94" height="141"/>
                                         <state key="normal" title="BbMinor" image="button2"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XRq-iw-a2x"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="fZ4-ii-oIV"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SVF-hc-JuC"/>
                                         </connections>
                                     </button>
@@ -96,7 +146,7 @@
                                         <rect key="frame" x="183" y="367" width="94" height="141"/>
                                         <state key="normal" title="BbSeventh" image="button3"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ydo-Gz-2fc"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="qWJ-gv-XBN"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R5C-r4-HsE"/>
                                         </connections>
                                     </button>
@@ -104,7 +154,7 @@
                                         <rect key="frame" x="261" y="63" width="94" height="141"/>
                                         <state key="normal" title="FMajor" image="button1"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4so-53-DrV"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="buu-h0-crV"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yMb-SY-Yqa"/>
                                         </connections>
                                     </button>
@@ -112,7 +162,7 @@
                                         <rect key="frame" x="261" y="218" width="94" height="141"/>
                                         <state key="normal" title="FMinor" image="button2"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wsO-UR-Eq5"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="0fa-an-4Ia"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="raO-aN-KxE"/>
                                         </connections>
                                     </button>
@@ -120,7 +170,7 @@
                                         <rect key="frame" x="261" y="367" width="94" height="141"/>
                                         <state key="normal" title="FSeventh" image="button3"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vGt-Gr-DFY"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="j8E-yC-fH0"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PpH-p8-vxZ"/>
                                         </connections>
                                     </button>
@@ -128,7 +178,7 @@
                                         <rect key="frame" x="342" y="63" width="94" height="141"/>
                                         <state key="normal" title="CMajor" image="button1"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LkA-0G-F5Q"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="VzI-po-mSl"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ARC-s7-vde"/>
                                         </connections>
                                     </button>
@@ -136,7 +186,7 @@
                                         <rect key="frame" x="342" y="218" width="94" height="141"/>
                                         <state key="normal" title="CMinor" image="button2"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3xi-7E-JD8"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="nhN-6L-T3j"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IAM-7e-lhB"/>
                                         </connections>
                                     </button>
@@ -144,7 +194,7 @@
                                         <rect key="frame" x="342" y="367" width="94" height="141"/>
                                         <state key="normal" title="CSeventh" image="button3"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bTt-7H-p9t"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="C7F-LB-sO4"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MQe-7Z-z72"/>
                                         </connections>
                                     </button>
@@ -152,7 +202,7 @@
                                         <rect key="frame" x="421" y="63" width="94" height="141"/>
                                         <state key="normal" title="GMajor" image="button1"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HfX-ec-hAw"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="TqM-FD-mR0"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IJ0-PJ-PCh"/>
                                         </connections>
                                     </button>
@@ -160,7 +210,7 @@
                                         <rect key="frame" x="421" y="218" width="94" height="141"/>
                                         <state key="normal" title="GMinor" image="button2"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="clR-Hi-FPm"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="bXj-tm-qDM"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qTz-uj-NHB"/>
                                         </connections>
                                     </button>
@@ -168,7 +218,7 @@
                                         <rect key="frame" x="421" y="367" width="94" height="141"/>
                                         <state key="normal" title="GSeventh" image="button3"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XXj-Uh-Gy3"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="Doz-p2-FgD"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d9O-uJ-eAE"/>
                                         </connections>
                                     </button>
@@ -176,7 +226,7 @@
                                         <rect key="frame" x="497" y="63" width="94" height="141"/>
                                         <state key="normal" title="DMajor" image="button1"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="map-5u-qQ7"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="uE7-zW-fvj"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PVU-oP-zOJ"/>
                                         </connections>
                                     </button>
@@ -184,7 +234,7 @@
                                         <rect key="frame" x="497" y="218" width="94" height="141"/>
                                         <state key="normal" title="DMinor" image="button2"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QZE-l0-z2q"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="Z6h-wm-RKd"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TxM-qq-fPm"/>
                                         </connections>
                                     </button>
@@ -192,7 +242,7 @@
                                         <rect key="frame" x="497" y="367" width="94" height="141"/>
                                         <state key="normal" title="DSeventh" image="button3"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qqT-io-pAa"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="vBQ-2P-P8P"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LNA-n7-R1m"/>
                                         </connections>
                                     </button>
@@ -200,7 +250,7 @@
                                         <rect key="frame" x="569" y="63" width="94" height="141"/>
                                         <state key="normal" title="AMajor" image="button1"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5kM-wb-aiK"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="42G-5x-6vY"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EPm-as-5Uv"/>
                                         </connections>
                                     </button>
@@ -208,7 +258,7 @@
                                         <rect key="frame" x="569" y="218" width="94" height="141"/>
                                         <state key="normal" title="AMinor" image="button2"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n6E-tg-Po3"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="pdL-2q-XCy"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xmK-pl-hHM"/>
                                         </connections>
                                     </button>
@@ -216,7 +266,7 @@
                                         <rect key="frame" x="639" y="63" width="94" height="141"/>
                                         <state key="normal" title="EMajor" image="button1"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="77H-Gh-b8u"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="h5F-Mi-hJj"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jAD-Pf-yFB"/>
                                         </connections>
                                     </button>
@@ -224,7 +274,7 @@
                                         <rect key="frame" x="708" y="63" width="94" height="141"/>
                                         <state key="normal" title="BMajor" image="button1"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pBj-1U-FyX"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="FF8-4K-MBa"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cmz-Yg-mO7"/>
                                         </connections>
                                     </button>
@@ -232,23 +282,15 @@
                                         <rect key="frame" x="779" y="63" width="94" height="141"/>
                                         <state key="normal" title="F#Major" image="button1"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4CK-QA-wO3"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="8o1-H7-E3n"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hin-Jm-AE8"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="210" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ME2-hE-E3T">
-                                        <rect key="frame" x="639" y="218" width="94" height="141"/>
-                                        <state key="normal" title="EMinor" image="button2"/>
-                                        <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JbN-eV-3pJ"/>
-                                            <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Mf-Xm-PNM"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="310" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkj-D8-4vn">
                                         <rect key="frame" x="639" y="367" width="94" height="141"/>
                                         <state key="normal" title="ESeventh" image="button3"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LFx-v1-3es"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="qhC-ZH-aD4"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zhM-ZM-4pt"/>
                                         </connections>
                                     </button>
@@ -256,7 +298,7 @@
                                         <rect key="frame" x="708" y="218" width="94" height="141"/>
                                         <state key="normal" title="BMinor" image="button2"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fzs-49-4bm"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="aFX-em-nQe"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ta1-Ue-DoK"/>
                                         </connections>
                                     </button>
@@ -264,7 +306,7 @@
                                         <rect key="frame" x="708" y="367" width="94" height="141"/>
                                         <state key="normal" title="BSeventh" image="button3"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pbx-JI-dPP"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="5mU-6V-nBb"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uo2-M6-M2o"/>
                                         </connections>
                                     </button>
@@ -272,7 +314,7 @@
                                         <rect key="frame" x="779" y="218" width="94" height="141"/>
                                         <state key="normal" title="F#Minor" image="button2"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IDz-jc-5zR"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="kN5-Wt-6dk"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eP6-Hz-6S0"/>
                                         </connections>
                                     </button>
@@ -280,23 +322,15 @@
                                         <rect key="frame" x="779" y="367" width="94" height="141"/>
                                         <state key="normal" title="F#Seventh" image="button3"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5xE-yM-K3e"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="NjD-Ax-0gk"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dWW-vu-Lhs"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="101" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aag-mJ-1Q9">
-                                        <rect key="frame" x="-16" y="63" width="94" height="141"/>
-                                        <state key="normal" title="DbMajor" image="button1"/>
-                                        <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="a0H-Md-tQm"/>
-                                            <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pux-nV-LtA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="201" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWc-CC-lZp">
                                         <rect key="frame" x="-16" y="218" width="94" height="141"/>
                                         <state key="normal" title="DbMinor" image="button2"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gyl-Un-QPi"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="xmJ-dL-Bup"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oG9-l0-G1Y"/>
                                         </connections>
                                     </button>
@@ -304,19 +338,47 @@
                                         <rect key="frame" x="569" y="367" width="94" height="141"/>
                                         <state key="normal" title="ASeventh" image="button3"/>
                                         <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Rt-5B-c0Q"/>
-                                            <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UiW-yJ-T15"/>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="dLv-Oj-Lfp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="101" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aag-mJ-1Q9">
+                                        <rect key="frame" x="-16" y="63" width="94" height="141"/>
+                                        <state key="normal" title="DbMajor" image="button1"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="Flo-Fb-p76"/>
+                                            <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pux-nV-LtA"/>
+                                            <action selector="testDrag:" destination="BYZ-38-t0r" eventType="touchDragEnter" id="7e7-Jc-quc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="210" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ME2-hE-E3T">
+                                        <rect key="frame" x="639" y="218" width="94" height="141"/>
+                                        <state key="normal" title="EMinor" image="button2"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="Fn2-CT-b1D"/>
+                                            <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Mf-Xm-PNM"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bfa-FP-FKJ">
-                                <rect key="frame" x="865" y="20" width="159" height="748"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sue-w2-NIR">
+                                <rect key="frame" x="7" y="20" width="850" height="226"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjD-A4-84b">
+                                        <rect key="frame" x="8" y="188" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5QV-Up-1BJ">
+                                        <rect key="frame" x="8" y="8" width="202" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
@@ -328,6 +390,7 @@
     </scenes>
     <resources>
         <image name="button1" width="160" height="320"/>
+        <image name="button1_horiz" width="160" height="80"/>
         <image name="button2" width="160" height="320"/>
         <image name="button3" width="160" height="320"/>
     </resources>

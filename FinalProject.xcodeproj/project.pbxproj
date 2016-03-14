@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34A4500E1C96408800545C2B /* sawPiano1.exs in Resources */ = {isa = PBXBuildFile; fileRef = 34A4500D1C96408800545C2B /* sawPiano1.exs */; };
+		34A450101C964E9C00545C2B /* ChordCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A4500F1C964E9B00545C2B /* ChordCalculator.swift */; };
 		34FB446F1C8DD71300238009 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FB446E1C8DD71300238009 /* AppDelegate.swift */; };
 		34FB44711C8DD71300238009 /* SynthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FB44701C8DD71300238009 /* SynthViewController.swift */; };
 		34FB44741C8DD71300238009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FB44721C8DD71300238009 /* Main.storyboard */; };
@@ -14,9 +16,19 @@
 		34FB44791C8DD71300238009 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FB44771C8DD71300238009 /* LaunchScreen.storyboard */; };
 		34FB44851C8DD7A300238009 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34FB44841C8DD7A300238009 /* AudioKit.framework */; };
 		34FB44861C8DD7A300238009 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34FB44841C8DD7A300238009 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		34FF3D801C9716C800F4A4AD /* RibbonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FF3D7F1C9716C800F4A4AD /* RibbonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		34D0D9451C963D53000A4E8D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		34FB44831C8DD72900238009 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -31,7 +43,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3415B4FF1C9637C3001BBD5D /* sawPiano1.exs */ = {isa = PBXFileReference; lastKnownFileType = file; path = sawPiano1.exs; sourceTree = "<group>"; };
+		34A4500D1C96408800545C2B /* sawPiano1.exs */ = {isa = PBXFileReference; lastKnownFileType = file; name = sawPiano1.exs; path = ../sawPiano1.exs; sourceTree = "<group>"; };
+		34A4500F1C964E9B00545C2B /* ChordCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordCalculator.swift; sourceTree = "<group>"; };
 		34FB446B1C8DD71300238009 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FB446E1C8DD71300238009 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34FB44701C8DD71300238009 /* SynthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynthViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +53,7 @@
 		34FB44781C8DD71300238009 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34FB447A1C8DD71300238009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34FB44841C8DD7A300238009 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = SOURCE_ROOT; };
+		34FF3D7F1C9716C800F4A4AD /* RibbonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RibbonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +71,7 @@
 		3415B4FE1C962F5B001BBD5D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3415B4FF1C9637C3001BBD5D /* sawPiano1.exs */,
+				34A4500D1C96408800545C2B /* sawPiano1.exs */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -83,6 +97,8 @@
 		34FB446D1C8DD71300238009 /* FinalProject */ = {
 			isa = PBXGroup;
 			children = (
+				34FF3D7F1C9716C800F4A4AD /* RibbonViewController.swift */,
+				34A4500F1C964E9B00545C2B /* ChordCalculator.swift */,
 				34FB446E1C8DD71300238009 /* AppDelegate.swift */,
 				34FB44701C8DD71300238009 /* SynthViewController.swift */,
 				34FB44721C8DD71300238009 /* Main.storyboard */,
@@ -104,6 +120,7 @@
 				34FB44681C8DD71300238009 /* Frameworks */,
 				34FB44691C8DD71300238009 /* Resources */,
 				34FB44831C8DD72900238009 /* Embed Frameworks */,
+				34D0D9451C963D53000A4E8D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -154,6 +171,7 @@
 			files = (
 				34FB44791C8DD71300238009 /* LaunchScreen.storyboard in Resources */,
 				34FB44761C8DD71300238009 /* Assets.xcassets in Resources */,
+				34A4500E1C96408800545C2B /* sawPiano1.exs in Resources */,
 				34FB44741C8DD71300238009 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,7 +183,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34FF3D801C9716C800F4A4AD /* RibbonViewController.swift in Sources */,
 				34FB44711C8DD71300238009 /* SynthViewController.swift in Sources */,
+				34A450101C964E9C00545C2B /* ChordCalculator.swift in Sources */,
 				34FB446F1C8DD71300238009 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
