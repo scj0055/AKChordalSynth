@@ -419,5 +419,10 @@ class SynthViewController: UIViewController {
         
     }
     
+    @IBAction func buttonReleasedOutside(sender: AnyObject) {
+        
+        prepareToPlayChord(sender.tag, playOrStop: "stop")
+        
+    }
 
 }

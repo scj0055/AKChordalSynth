@@ -12,6 +12,7 @@ import Foundation
 class PatchBrowser: UITableViewController {
     
     var numberOfFiles = 0
+    var patchList = ["P6AMB", "P6FAT", "BELL"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,11 +24,47 @@ class PatchBrowser: UITableViewController {
     
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return numberOfFiles
+        return patchList.count
     }
     
-//    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        return 2
-//    }
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cellIdentifier = "PatchTableViewCell"
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! PatchTableViewCell
+        
+        let patchName = patchList[indexPath.row]
+        
+        cell.patchName.text = patchName
+        
+        return cell
+        
+    }
+    
+    var toPassPatchName: String!
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        print("Patch Selected: \(patchList[indexPath.row])")
+        
+        // get the patch name
+        let patchIndex = tableView.indexPathForSelectedRow!
+        
+        let patchName = patchList[patchIndex.row]
+        
+        toPassPatchName = patchName
+        performSegueWithIdentifier("ReturnToMain", sender: self)
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "ReturnToMain") {
+            
+            let viewController = segue.destinationViewController as! SynthViewController
+            
+            viewController.currentPatch = toPassPatchName
+            viewController.loadPatch(viewController.currentPatch)
+            
+        }
+    }
     
 }

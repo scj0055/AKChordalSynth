@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		34059AAB1C9725C4006D5718 /* BELL.wav in Resources */ = {isa = PBXBuildFile; fileRef = 34059AAA1C9725C4006D5718 /* BELL.wav */; };
-		34059AAD1C972610006D5718 /* P6FAT.wav in Resources */ = {isa = PBXBuildFile; fileRef = 34059AAC1C972610006D5718 /* P6FAT.wav */; };
 		34059AAF1C972854006D5718 /* PatchBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34059AAE1C972854006D5718 /* PatchBrowser.swift */; };
 		34059AB11C972984006D5718 /* PatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34059AB01C972984006D5718 /* PatchTableViewCell.swift */; };
+		34059AB71C972BD0006D5718 /* P6AMB.wav in Resources */ = {isa = PBXBuildFile; fileRef = 34059AB31C972BD0006D5718 /* P6AMB.wav */; };
+		34059AB81C972BD0006D5718 /* P6FAT.wav in Resources */ = {isa = PBXBuildFile; fileRef = 34059AB41C972BD0006D5718 /* P6FAT.wav */; };
+		34059AB91C972BD0006D5718 /* BELL.wav in Resources */ = {isa = PBXBuildFile; fileRef = 34059AB51C972BD0006D5718 /* BELL.wav */; };
 		34A450101C964E9C00545C2B /* ChordCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A4500F1C964E9B00545C2B /* ChordCalculator.swift */; };
 		34FB446F1C8DD71300238009 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FB446E1C8DD71300238009 /* AppDelegate.swift */; };
 		34FB44711C8DD71300238009 /* SynthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FB44701C8DD71300238009 /* SynthViewController.swift */; };
@@ -46,10 +47,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		34059AAA1C9725C4006D5718 /* BELL.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = BELL.wav; path = ../BELL.wav; sourceTree = "<group>"; };
-		34059AAC1C972610006D5718 /* P6FAT.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = P6FAT.wav; path = ../P6FAT.wav; sourceTree = "<group>"; };
 		34059AAE1C972854006D5718 /* PatchBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatchBrowser.swift; sourceTree = "<group>"; };
 		34059AB01C972984006D5718 /* PatchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatchTableViewCell.swift; sourceTree = "<group>"; };
+		34059AB31C972BD0006D5718 /* P6AMB.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = P6AMB.wav; sourceTree = "<group>"; };
+		34059AB41C972BD0006D5718 /* P6FAT.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = P6FAT.wav; sourceTree = "<group>"; };
+		34059AB51C972BD0006D5718 /* BELL.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BELL.wav; sourceTree = "<group>"; };
 		34A4500F1C964E9B00545C2B /* ChordCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordCalculator.swift; sourceTree = "<group>"; };
 		34FB446B1C8DD71300238009 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FB446E1C8DD71300238009 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,8 +79,9 @@
 		3415B4FE1C962F5B001BBD5D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				34059AAC1C972610006D5718 /* P6FAT.wav */,
-				34059AAA1C9725C4006D5718 /* BELL.wav */,
+				34059AB31C972BD0006D5718 /* P6AMB.wav */,
+				34059AB41C972BD0006D5718 /* P6FAT.wav */,
+				34059AB51C972BD0006D5718 /* BELL.wav */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -186,10 +189,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34059AB71C972BD0006D5718 /* P6AMB.wav in Resources */,
 				34FB44791C8DD71300238009 /* LaunchScreen.storyboard in Resources */,
-				34059AAD1C972610006D5718 /* P6FAT.wav in Resources */,
-				34059AAB1C9725C4006D5718 /* BELL.wav in Resources */,
+				34059AB91C972BD0006D5718 /* BELL.wav in Resources */,
 				34FB44761C8DD71300238009 /* Assets.xcassets in Resources */,
+				34059AB81C972BD0006D5718 /* P6FAT.wav in Resources */,
 				34FB44741C8DD71300238009 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

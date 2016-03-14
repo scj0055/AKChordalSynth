@@ -76,6 +76,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="s5I-qn-1h0"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wFE-8e-ETx"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qc1-28-R15"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="102" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t46-YH-ioy">
@@ -84,6 +85,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="UNB-Tf-kmL"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lik-TR-zeN"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hr3-nQ-aCL"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="202" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2P-Bg-FgA">
@@ -92,6 +94,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="bql-ee-xNi"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OQK-ba-SK2"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uuw-VN-nqa"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="302" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ikp-Tb-Eui">
@@ -100,6 +103,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="zdf-rS-4ON"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8AB-Yb-AXp"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P8w-nQ-pEQ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="103" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZq-1q-gea">
@@ -108,6 +112,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="JXu-dM-dZh"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ziw-s6-1yF"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cad-Om-0dd"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="203" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmL-dx-udj">
@@ -116,6 +121,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="zmO-Nz-3fO"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gQj-nn-qR2"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TQy-W4-wmp"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="303" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxf-hQ-Ch6">
@@ -124,6 +130,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="uy6-qq-0MQ"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PDQ-6l-Scd"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4mq-Ha-jp6"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmN-TA-SfF">
@@ -132,6 +139,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="Edn-XE-yLb"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pdb-Do-a7s"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hXs-tE-E1C"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="204" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Wi-oG-ZhC">
@@ -140,6 +148,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="fZ4-ii-oIV"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SVF-hc-JuC"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qK6-pf-zMg"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="304" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQ0-YQ-Utt">
@@ -148,6 +157,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="qWJ-gv-XBN"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R5C-r4-HsE"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LAi-7i-gJc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="105" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leV-8e-asd">
@@ -156,6 +166,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="buu-h0-crV"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yMb-SY-Yqa"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="taV-gY-Co2"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="205" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="heI-mI-SAh">
@@ -164,6 +175,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="0fa-an-4Ia"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="raO-aN-KxE"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RX6-qG-kTq"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="305" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNT-Vz-dze">
@@ -172,6 +184,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="j8E-yC-fH0"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PpH-p8-vxZ"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kLk-0Y-71J"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="106" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOr-Pj-vQy">
@@ -180,6 +193,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="VzI-po-mSl"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ARC-s7-vde"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1e6-HM-cIk"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="206" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEr-iD-9bv">
@@ -188,6 +202,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="nhN-6L-T3j"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IAM-7e-lhB"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZI3-1i-gcz"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="306" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6n-ho-47a">
@@ -196,6 +211,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="C7F-LB-sO4"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MQe-7Z-z72"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wE3-bk-RzH"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="107" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCw-Mi-fyT">
@@ -204,6 +220,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="TqM-FD-mR0"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IJ0-PJ-PCh"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iQS-zH-Tdt"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="207" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHO-7U-0rA">
@@ -212,6 +229,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="bXj-tm-qDM"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qTz-uj-NHB"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ev6-wj-dZd"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="307" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMw-Tc-p2y">
@@ -220,6 +238,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="Doz-p2-FgD"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d9O-uJ-eAE"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="epi-VX-qGM"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="108" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOk-Yc-NcM">
@@ -228,6 +247,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="uE7-zW-fvj"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PVU-oP-zOJ"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MIh-16-nOr"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="208" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z82-P2-t8E">
@@ -236,6 +256,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="Z6h-wm-RKd"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TxM-qq-fPm"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bkt-Mn-Dob"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="308" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMl-Oy-I7q">
@@ -244,6 +265,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="vBQ-2P-P8P"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LNA-n7-R1m"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kbA-pf-GD2"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="109" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WrK-tv-6ST">
@@ -252,6 +274,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="42G-5x-6vY"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EPm-as-5Uv"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nLB-Gm-nMu"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="209" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoR-IA-SgP">
@@ -260,6 +283,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="pdL-2q-XCy"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xmK-pl-hHM"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AB6-8A-Mka"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="110" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOk-aC-USn">
@@ -268,14 +292,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="h5F-Mi-hJj"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jAD-Pf-yFB"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="111" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mM2-x1-q2j">
-                                        <rect key="frame" x="708" y="63" width="94" height="141"/>
-                                        <state key="normal" title="BMajor" image="button1"/>
-                                        <connections>
-                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="FF8-4K-MBa"/>
-                                            <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cmz-Yg-mO7"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eRg-6Z-HR5"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="112" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zy7-OA-R8Q">
@@ -284,6 +301,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="8o1-H7-E3n"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hin-Jm-AE8"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ehL-N1-eyZ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="310" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkj-D8-4vn">
@@ -292,6 +310,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="qhC-ZH-aD4"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zhM-ZM-4pt"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="icZ-kC-XZB"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="211" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbC-Nb-1Dr">
@@ -300,6 +319,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="aFX-em-nQe"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ta1-Ue-DoK"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bY4-rA-HI4"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="311" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Eb-fd-g79">
@@ -308,6 +328,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="5mU-6V-nBb"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uo2-M6-M2o"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ixY-Fq-9wD"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="212" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GvS-53-qii">
@@ -316,6 +337,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="kN5-Wt-6dk"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eP6-Hz-6S0"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Enc-aY-5z8"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="312" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWS-eC-rPy">
@@ -324,6 +346,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="NjD-Ax-0gk"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dWW-vu-Lhs"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IuI-Vo-TQl"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="201" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWc-CC-lZp">
@@ -332,6 +355,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="xmJ-dL-Bup"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oG9-l0-G1Y"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9yd-ar-xWe"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="309" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0DM-ks-3TR">
@@ -339,6 +363,7 @@
                                         <state key="normal" title="ASeventh" image="button3"/>
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="dLv-Oj-Lfp"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y3D-2W-gE4"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="101" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aag-mJ-1Q9">
@@ -347,6 +372,7 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="Flo-Fb-p76"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pux-nV-LtA"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpOutside" id="C3X-EV-Yxi"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="210" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ME2-hE-E3T">
@@ -355,6 +381,16 @@
                                         <connections>
                                             <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="Fn2-CT-b1D"/>
                                             <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Mf-Xm-PNM"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ltK-Mx-u0H"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="111" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mM2-x1-q2j">
+                                        <rect key="frame" x="708" y="63" width="94" height="141"/>
+                                        <state key="normal" title="BMajor" image="button1"/>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchDown" id="FF8-4K-MBa"/>
+                                            <action selector="buttonReleased:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cmz-Yg-mO7"/>
+                                            <action selector="buttonReleasedOutside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PGG-HS-bpo"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -373,7 +409,7 @@
                                         <rect key="frame" x="796" y="3" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
-                                            <segue destination="oxi-YR-gGA" kind="popoverPresentation" popoverAnchorView="yjD-A4-84b" id="2sd-pE-Wgn">
+                                            <segue destination="oxi-YR-gGA" kind="popoverPresentation" identifier="ReturnToMain" popoverAnchorView="yjD-A4-84b" id="2sd-pE-Wgn">
                                                 <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                             </segue>
                                         </connections>
@@ -403,7 +439,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Sh8-Zi-AhX" customClass="PatchTableViewCell" customModule="FinalProject" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PatchTableViewCell" id="Sh8-Zi-AhX" customClass="PatchTableViewCell" customModule="FinalProject" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Sh8-Zi-AhX" id="JE3-nq-253">
@@ -431,7 +467,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qUb-Ng-uhk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1342" y="375"/>
+            <point key="canvasLocation" x="1393" y="375"/>
         </scene>
     </scenes>
     <resources>
