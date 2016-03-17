@@ -25,7 +25,9 @@ class SynthViewController: UIViewController {
     var currentRibbonNote = 0
     var masterVolume = 80
     
-    var enableRibbonController = false
+    var enableRibbonController = true
+    
+    var loadCount = 0
     
     var isAudioKitStarted = false
     
@@ -83,6 +85,14 @@ class SynthViewController: UIViewController {
         
         loadPatch(self.currentPatch)
         
+        let defaults = NSUserDefaults.standardUserDefaults()
+        
+        let userDefaultVolume = defaults.doubleForKey("master_volume")
+        
+        self.masterVolume = Int(floor(userDefaultVolume))
+        
+        print(loadCount)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -128,6 +138,8 @@ class SynthViewController: UIViewController {
         
         print("Patch Loaded. AudioKit Started: \(self.isAudioKitStarted)")
         
+        self.loadCount++
+        
     }
     
     /*
@@ -147,8 +159,10 @@ class SynthViewController: UIViewController {
                 
                 if noteVal != self.currentRibbonNote {
                     
-                    playRibbonNote(noteVal + 1)
-                    print("Note played: \(noteVal + 1)")
+                    if loadCount == 1 {
+                        playRibbonNote(noteVal + 1)
+                        print("Note played: \(noteVal + 1)")
+                    }
                     
                 }
                 

@@ -13,7 +13,7 @@ class SplashScreenController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let timer = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "transitionView", userInfo: nil, repeats: false)
+        _ = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "transitionView", userInfo: nil, repeats: false)
     }
     
     func transitionView() {
