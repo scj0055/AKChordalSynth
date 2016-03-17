@@ -18,11 +18,12 @@ class PatchBrowser: UITableViewController {
         super.viewDidLoad()
     }
     
+    /// -Attribution: For all of the following - previous lecture/projects/in-class slides
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
-
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return patchList.count
     }

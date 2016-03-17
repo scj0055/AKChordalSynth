@@ -106,6 +106,9 @@ class SynthViewController: UIViewController {
     //
     */
     
+    /// Shows a "rate me" view 
+    /// -Attribution: http://www.brianjcoleman.com/tutorial-rate-me-using-uialertview-in-swift/
+    
     func showRateMe() {
         
         let alert = UIAlertController(title: "Rate Us", message: "Thanks for using AKChordalSynth", preferredStyle: UIAlertControllerStyle.Alert)
@@ -132,6 +135,10 @@ class SynthViewController: UIViewController {
     MARK: HELPER FUNCTIONS
     //
     */
+    
+    /// Loads a patch into the audio engine
+    /// -Parameter patchToLoad: the name of the patch to load, as a string
+    /// -Attribution: AudioKit documentation
     
     func loadPatch(patchToLoad: String) {
         
@@ -199,6 +206,9 @@ class SynthViewController: UIViewController {
         }
     }
     
+    /// Helper function that decides which note to play for the ribbon controller
+    /// -Parameter yPos: the y position of the current tap
+    /// -Attribution: class, lecture
     
     // calculate which 12th of the screen we're dragging in
     func calcNoteValue(yPos: CGFloat) -> Int {
@@ -208,6 +218,9 @@ class SynthViewController: UIViewController {
         return Int(floor(yPos / segmentHeight))
         
     }
+    
+    /// Plays a note on the ribbon controller, based on the current note value
+    /// -Parameter currentNote: the note to play
     
     func playRibbonNote(currentNote: Int) {
         
@@ -239,6 +252,9 @@ class SynthViewController: UIViewController {
         }
         
     }
+    
+    /// Stops a note on the ribbon controller, based on the current note value
+    /// -Parameter currentNote: the note to stop
     
     func stopRibbonNote(currentNote: Int) {
         
@@ -277,6 +293,9 @@ class SynthViewController: UIViewController {
     //
     */
     
+    /// Plays a chord, based on the current notes to be played.
+    /// -Attribution: AudioKit documentation
+    
     func playChord() {
         
         sampler.playNote(self.note1, velocity: self.masterVolume, channel: 0)
@@ -284,11 +303,17 @@ class SynthViewController: UIViewController {
         sampler.playNote(self.note3, velocity: self.masterVolume, channel: 0)
     }
     
+    /// Plays a chord, based on the current notes to be played.
+    /// -Attribution: AudioKit documentation
+    
     func stopChord() {
         sampler.stopNote(self.note1, channel: 0)
         sampler.stopNote(self.note2, channel: 0)
         sampler.stopNote(self.note3, channel: 0)
     }
+    
+    /// Plays a single note
+    /// -Attribution: AudioKit documentation
     
     func playNote(note: Int) {
         
@@ -297,13 +322,17 @@ class SynthViewController: UIViewController {
         } 
     }
     
+    /// Stops a single note
+    /// -Attribution: AudioKit documentation
+    
     func stopNote(note: Int) {
         
         sampler.stopNote(note, channel: 0)
     }
     
-    // helper function - takes in the tag value of a button and calculates the chord value
-    // then, plays the actual chord
+    /// Helper function - takes in the tag value of a button and calculates the chord value
+    /// -Parameter senderTag: the tag value of the button that triggered the event
+    /// -Parameter playOrStop: either play the note, or stop the note
     
     func prepareToPlayChord(senderTag: Int, playOrStop: String) {
         
@@ -334,6 +363,11 @@ class SynthViewController: UIViewController {
         }
         
     }
+    
+    /// Main function that decides the notes for a chord
+    /// -Parameter currentType: is the current type major, minor, or seventh
+    /// -Parameter currentChord: the chord to play (one of the 12 notes in the scale)
+    /// -Parameter currentOctave: the current octave of the instrument
     
     func calculateChord(currentType: String, currentChord: Int, currentOctave: Int) {
         
@@ -588,6 +622,8 @@ class SynthViewController: UIViewController {
     MARK: OUTLET ACTIONS
     //
     */
+    
+    /// -Attribution: All of these came from lecture/previous projects
     
     // buttonPressed: the start of a synth note
     // The synth engine should begin playing
