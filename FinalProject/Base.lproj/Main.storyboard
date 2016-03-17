@@ -19,53 +19,8 @@
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bfa-FP-FKJ" customClass="RibbonViewController" customModule="FinalProject" customModuleProvider="target">
                                 <rect key="frame" x="865" y="0.0" width="159" height="768"/>
-                                <subviews>
-                                    <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2g-Cf-5Ix">
-                                        <rect key="frame" x="0.0" y="706" width="159" height="62"/>
-                                        <state key="normal" title="Button" image="button1_horiz"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBY-Bo-rGP">
-                                        <rect key="frame" x="0.0" y="578" width="159" height="62"/>
-                                        <state key="normal" title="Button" image="button1_horiz"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ase-H1-J6d">
-                                        <rect key="frame" x="0.0" y="508" width="159" height="62"/>
-                                        <state key="normal" title="Button" image="button1_horiz"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sxb-A6-zsC">
-                                        <rect key="frame" x="0.0" y="438" width="159" height="62"/>
-                                        <state key="normal" title="Button" image="button1_horiz"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGi-dq-xdf">
-                                        <rect key="frame" x="0.0" y="368" width="159" height="62"/>
-                                        <state key="normal" title="Button" image="button1_horiz"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YcT-Qa-dSK">
-                                        <rect key="frame" x="0.0" y="298" width="159" height="62"/>
-                                        <state key="normal" title="Button" image="button1_horiz"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jA-vc-fl7">
-                                        <rect key="frame" x="0.0" y="228" width="159" height="62"/>
-                                        <state key="normal" title="Button" image="button1_horiz"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJy-DR-ynk">
-                                        <rect key="frame" x="0.0" y="158" width="159" height="62"/>
-                                        <state key="normal" title="Button" image="button1_horiz"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oh1-O0-acP">
-                                        <rect key="frame" x="0.0" y="88" width="159" height="62"/>
-                                        <state key="normal" title="Button" image="button1_horiz"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPF-Gj-djf">
-                                        <rect key="frame" x="0.0" y="18" width="159" height="62"/>
-                                        <state key="normal" title="Button" image="button1_horiz"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qap-fd-5oL">
-                                        <rect key="frame" x="0.0" y="648" width="159" height="62"/>
-                                        <state key="normal" title="Button" image="button1_horiz"/>
-                                    </button>
-                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" identifier="ribbon"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ce1-2Z-yK6">
                                 <rect key="frame" x="0.0" y="254" width="857" height="514"/>
@@ -405,15 +360,108 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjD-A4-84b">
-                                        <rect key="frame" x="796" y="3" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qO4-u2-Ok4">
+                                        <rect key="frame" x="6" y="188" width="118" height="31"/>
                                         <connections>
-                                            <segue destination="oxi-YR-gGA" kind="popoverPresentation" identifier="ReturnToMain" popoverAnchorView="yjD-A4-84b" id="2sd-pE-Wgn">
+                                            <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="UyO-zU-OoM"/>
+                                        </connections>
+                                    </slider>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjD-A4-84b">
+                                        <rect key="frame" x="738" y="3" width="104" height="30"/>
+                                        <state key="normal" title="Patch Browser"/>
+                                        <connections>
+                                            <segue destination="oxi-YR-gGA" kind="popoverPresentation" popoverAnchorView="yjD-A4-84b" id="khT-W8-EIh">
                                                 <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                             </segue>
                                         </connections>
                                     </button>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vVO-Sf-GSj">
+                                        <rect key="frame" x="6" y="137" width="118" height="31"/>
+                                        <connections>
+                                            <action selector="dFeedbackModified:" destination="BYZ-38-t0r" eventType="valueChanged" id="e42-Uc-w7F"/>
+                                        </connections>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="GPI-SR-Wka">
+                                        <rect key="frame" x="6" y="81" width="118" height="31"/>
+                                        <connections>
+                                            <action selector="dTimeModified:" destination="BYZ-38-t0r" eventType="valueChanged" id="S8V-eh-tHn"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Delay Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAq-Mr-XXI">
+                                        <rect key="frame" x="137" y="85" width="100" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Delay Fdbk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yV-f5-5rQ">
+                                        <rect key="frame" x="137" y="141" width="93" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Delay Mix" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ss-Uc-eje">
+                                        <rect key="frame" x="137" y="192" width="93" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXg-Lv-Osw">
+                                        <rect key="frame" x="755" y="188" width="79" height="30"/>
+                                        <state key="normal" title="8va Up"/>
+                                        <connections>
+                                            <action selector="octaveUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xP5-Kt-ogq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGD-cf-rLe">
+                                        <rect key="frame" x="662" y="188" width="85" height="30"/>
+                                        <state key="normal" title="8va Down"/>
+                                        <connections>
+                                            <action selector="octaveDown:" destination="BYZ-38-t0r" eventType="touchDown" id="8aL-8L-VAb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7YM-1n-27f">
+                                        <rect key="frame" x="556" y="188" width="92" height="30"/>
+                                        <state key="normal" title="Maj/Min 7th"/>
+                                        <connections>
+                                            <action selector="changeSeventh:" destination="BYZ-38-t0r" eventType="touchDown" id="1g6-18-e6x"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PB0-6t-nRx">
+                                        <rect key="frame" x="315" y="8" width="171" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xkb-Sh-kn9">
+                                        <rect key="frame" x="573" y="7" width="144" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="oNw-0G-WQB">
+                                        <rect key="frame" x="243" y="137" width="118" height="31"/>
+                                        <connections>
+                                            <action selector="reverbMixModified:" destination="BYZ-38-t0r" eventType="valueChanged" id="tBM-fW-01F"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reverb Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HBq-WD-gRf">
+                                        <rect key="frame" x="389" y="85" width="97" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reverb Mix" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAY-WV-n5K">
+                                        <rect key="frame" x="389" y="141" width="97" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="FjN-Oe-evO">
+                                        <rect key="frame" x="243" y="81" width="118" height="31"/>
+                                        <connections>
+                                            <action selector="reverbTimeModified:" destination="BYZ-38-t0r" eventType="valueChanged" id="88N-i4-PAp"/>
+                                        </connections>
+                                    </slider>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -424,6 +472,13 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
                     <connections>
                         <outlet property="currentPatchName" destination="5QV-Up-1BJ" id="6ov-rZ-yCj"/>
+                        <outlet property="dFdbkSlider" destination="vVO-Sf-GSj" id="gKT-UQ-Bye"/>
+                        <outlet property="dMixSlider" destination="qO4-u2-Ok4" id="6iY-Lr-JgI"/>
+                        <outlet property="dTimeSlider" destination="GPI-SR-Wka" id="Z1l-uV-ISa"/>
+                        <outlet property="octaveLabel" destination="PB0-6t-nRx" id="XqQ-q4-55i"/>
+                        <outlet property="reverbMixSlider" destination="oNw-0G-WQB" id="Ruo-zI-Sqm"/>
+                        <outlet property="reverbTimeSlider" destination="FjN-Oe-evO" id="ohG-at-5ag"/>
+                        <outlet property="seventhLabel" destination="Xkb-Sh-kn9" id="JUg-hS-lgq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -435,15 +490,15 @@
             <objects>
                 <tableViewController id="oxi-YR-gGA" customClass="PatchBrowser" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="5RE-1T-nuU">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PatchTableViewCell" id="Sh8-Zi-AhX" customClass="PatchTableViewCell" customModule="FinalProject" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="1024" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Sh8-Zi-AhX" id="JE3-nq-253">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rgd-zh-2k2">
@@ -464,15 +519,18 @@
                             <outlet property="delegate" destination="oxi-YR-gGA" id="Gfv-qG-zZ1"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="mC8-7Y-c5T"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="returnToMain" animates="NO" action="showDetailViewController:sender:" id="fxc-IH-j2N"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qUb-Ng-uhk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1393" y="375"/>
+            <point key="canvasLocation" x="1612" y="397"/>
         </scene>
     </scenes>
     <resources>
         <image name="button1" width="160" height="320"/>
-        <image name="button1_horiz" width="160" height="80"/>
         <image name="button2" width="160" height="320"/>
         <image name="button3" width="160" height="320"/>
     </resources>

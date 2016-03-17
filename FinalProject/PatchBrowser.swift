@@ -30,13 +30,9 @@ class PatchBrowser: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cellIdentifier = "PatchTableViewCell"
-        
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! PatchTableViewCell
-        
         let patchName = patchList[indexPath.row]
-        
         cell.patchName.text = patchName
-        
         return cell
         
     }
@@ -48,21 +44,18 @@ class PatchBrowser: UITableViewController {
         
         // get the patch name
         let patchIndex = tableView.indexPathForSelectedRow!
-        
         let patchName = patchList[patchIndex.row]
-        
         toPassPatchName = patchName
-        performSegueWithIdentifier("ReturnToMain", sender: self)
+        performSegueWithIdentifier("returnToMain", sender: self)
         
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if (segue.identifier == "ReturnToMain") {
+        if (segue.identifier == "returnToMain") {
             
             let viewController = segue.destinationViewController as! SynthViewController
             
             viewController.currentPatch = toPassPatchName
-            viewController.loadPatch(viewController.currentPatch)
             
         }
     }
