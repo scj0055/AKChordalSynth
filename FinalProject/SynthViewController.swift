@@ -19,10 +19,15 @@ class SynthViewController: UIViewController {
     
     var sampler = AKSampler()
     var currentOctave = 5
-    var currentPatch = "P6AMB"
+    var currentPatch = "BELL"
     var majorOrMinorSeventh = "minor"
     var currentChordType = "major"
     var currentRibbonNote = 0
+    var masterVolume = 80
+    
+    var enableRibbonController = false
+    
+    var isAudioKitStarted = false
     
     let screenSize: CGRect = UIScreen.mainScreen().bounds
     
@@ -59,6 +64,8 @@ class SynthViewController: UIViewController {
     @IBOutlet weak var reverbTimeSlider: UISlider!
     @IBOutlet weak var reverbMixSlider: UISlider!
     
+    @IBOutlet weak var masterVolumeSlider: UISlider!
+    
     /*
     //
     MARK: LIFECYCLE
@@ -91,17 +98,23 @@ class SynthViewController: UIViewController {
     
     func loadPatch(patchToLoad: String) {
         
-        AudioKit.stop()
+        print("Loading patch. AudioKit Started: \(self.isAudioKitStarted)")
         
+        AudioKit.stop()
+        self.isAudioKitStarted = false
+        
+        // load the new patch
         sampler.loadWav(patchToLoad)
         self.currentPatch = patchToLoad
         self.currentPatchName.text = "Current Patch: \(patchToLoad)"
         
+        // initiate the delay
         let delay = AKDelay(sampler)
         delay.dryWetMix = self.delayMix
         delay.feedback = self.delayFeedback
         delay.time = self.delayTime
         
+        // initiate the reverb
         let reverb = AKReverb2(delay)
         reverb.dryWetMix = self.reverbMix
         reverb.decayTimeAt0Hz = self.reverbTime
@@ -109,8 +122,11 @@ class SynthViewController: UIViewController {
         
         AudioKit.output = reverb
         
-        // start AudioKit
+        // start audioKit
         AudioKit.start()
+        self.isAudioKitStarted = true
+        
+        print("Patch Loaded. AudioKit Started: \(self.isAudioKitStarted)")
         
     }
     
@@ -129,17 +145,10 @@ class SynthViewController: UIViewController {
                 let position = touch.locationInView(self.view)
                 let noteVal = calcNoteValue(position.y)
                 
-                print(noteVal)
-                
                 if noteVal != self.currentRibbonNote {
                     
-                    AudioKit.start()
-
                     playRibbonNote(noteVal + 1)
                     print("Note played: \(noteVal + 1)")
-
-                    print("Error Playing Note")
-                    
                     
                 }
                 
@@ -229,9 +238,9 @@ class SynthViewController: UIViewController {
     
     func playChord() {
         
-        sampler.playNote(self.note1, velocity: 127, channel: 0)
-        sampler.playNote(self.note2, velocity: 127, channel: 0)
-        sampler.playNote(self.note3, velocity: 127, channel: 0)
+        sampler.playNote(self.note1, velocity: self.masterVolume, channel: 0)
+        sampler.playNote(self.note2, velocity: self.masterVolume, channel: 0)
+        sampler.playNote(self.note3, velocity: self.masterVolume, channel: 0)
     }
     
     func stopChord() {
@@ -241,7 +250,10 @@ class SynthViewController: UIViewController {
     }
     
     func playNote(note: Int) {
-            sampler.playNote(note, velocity: 127, channel: 0)
+        
+        if self.isAudioKitStarted {
+            sampler.playNote(note, velocity: self.masterVolume, channel: 0)
+        } 
     }
     
     func stopNote(note: Int) {
@@ -611,5 +623,10 @@ class SynthViewController: UIViewController {
         self.reverbMix = Double(reverbMixSlider.value)
         loadPatch(self.currentPatch)
         print("Reverb Mix: \(self.reverbMix)")
+    }
+    
+    @IBAction func masterVolumeModified(sender: UISlider) {
+        self.masterVolume = Int(floor(masterVolumeSlider.value))
+        print("Master Volume: \(masterVolume)")
     }
 }

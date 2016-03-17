@@ -13,6 +13,7 @@
 		34059AB81C972BD0006D5718 /* P6FAT.wav in Resources */ = {isa = PBXBuildFile; fileRef = 34059AB41C972BD0006D5718 /* P6FAT.wav */; };
 		34059AB91C972BD0006D5718 /* BELL.wav in Resources */ = {isa = PBXBuildFile; fileRef = 34059AB51C972BD0006D5718 /* BELL.wav */; };
 		34A450101C964E9C00545C2B /* ChordCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A4500F1C964E9B00545C2B /* ChordCalculator.swift */; };
+		34C1A2021C9A4E0A00842EB5 /* SplashScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C1A2011C9A4E0A00842EB5 /* SplashScreenController.swift */; };
 		34FB446F1C8DD71300238009 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FB446E1C8DD71300238009 /* AppDelegate.swift */; };
 		34FB44711C8DD71300238009 /* SynthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FB44701C8DD71300238009 /* SynthViewController.swift */; };
 		34FB44741C8DD71300238009 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FB44721C8DD71300238009 /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		34059AB41C972BD0006D5718 /* P6FAT.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = P6FAT.wav; sourceTree = "<group>"; };
 		34059AB51C972BD0006D5718 /* BELL.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = BELL.wav; sourceTree = "<group>"; };
 		34A4500F1C964E9B00545C2B /* ChordCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChordCalculator.swift; sourceTree = "<group>"; };
+		34C1A2011C9A4E0A00842EB5 /* SplashScreenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenController.swift; sourceTree = "<group>"; };
 		34FB446B1C8DD71300238009 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FB446E1C8DD71300238009 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34FB44701C8DD71300238009 /* SynthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynthViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		34FB446D1C8DD71300238009 /* FinalProject */ = {
 			isa = PBXGroup;
 			children = (
+				34C1A2011C9A4E0A00842EB5 /* SplashScreenController.swift */,
 				34059AB01C972984006D5718 /* PatchTableViewCell.swift */,
 				34059AAE1C972854006D5718 /* PatchBrowser.swift */,
 				34A4500F1C964E9B00545C2B /* ChordCalculator.swift */,
@@ -202,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34C1A2021C9A4E0A00842EB5 /* SplashScreenController.swift in Sources */,
 				34FB44711C8DD71300238009 /* SynthViewController.swift in Sources */,
 				34059AB11C972984006D5718 /* PatchTableViewCell.swift in Sources */,
 				34A450101C964E9C00545C2B /* ChordCalculator.swift in Sources */,
