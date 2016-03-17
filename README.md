@@ -3,14 +3,23 @@ mpcs51030-2016-winter-project-scj0055 created by Classroom for GitHub
 
 Attributions:
 /// -Attribution: http://www.brianjcoleman.com/tutorial-rate-me-using-uialertview-in-swift/
+
 /// -Attribution: AudioKit documentation
+
 /// -Attribution: class, lecture
+
 /// -Attribution: AudioKit documentation
+
 /// -Attribution: AudioKit documentation
+
 /// -Attribution: AudioKit documentation
+
 /// -Attribution: AudioKit documentation
+
 /// -Attribution: All of these came from lecture/previous projects
+
 /// -Attribution: For all of the following - previous lecture/projects/in-class slides
+
 
 I think my marketing materials do a fairly good job of describing the app, so I'll refrain from doing that here.
 
