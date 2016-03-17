@@ -93,7 +93,40 @@ class SynthViewController: UIViewController {
         
         print(loadCount)
         
+        
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let currentCount = NSUserDefaults.standardUserDefaults().integerForKey("launchCount")
+        
+        if currentCount > 3 {
+            showRateMe()
+        }
+    }
+    
+    /*
+    //
+    APP RATINGS
+    //
+    */
+    
+    func showRateMe() {
+        
+        let alert = UIAlertController(title: "Rate Us", message: "Thanks for using AKChordalSynth", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        alert.addAction(UIAlertAction(title: "Rate AKChordalSynth", style: UIAlertActionStyle.Default, handler: { alertAction in
+            alert.dismissViewControllerAnimated(true, completion: nil)
+        }))
+        
+        alert.addAction(UIAlertAction(title: "No Thanks", style: UIAlertActionStyle.Default, handler: { alertAction in
+            alert.dismissViewControllerAnimated(true, completion: nil)
+        }))
+        
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

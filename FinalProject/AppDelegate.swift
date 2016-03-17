@@ -15,7 +15,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // register the initial launch date
+        
+        let todaysDate:NSDate = NSDate()
+        let dateFormatter:NSDateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "MM-dd-yyyy HH:mm"
+        let DateInFormat:String = dateFormatter.stringFromDate(todaysDate)
+        
+        print(DateInFormat)
+        
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        let defaultDate = ["launch_date" : DateInFormat]
+        
+        userDefaults.registerDefaults(defaultDate)
+        userDefaults.synchronize()
+        
+        // get current number of times app has been launched
+        let currentCount = NSUserDefaults.standardUserDefaults().integerForKey("launchCount")
+        
+        // increment received number by one
+        NSUserDefaults.standardUserDefaults().setInteger(currentCount+1, forKey:"launchCount")
+        
+        // save changes to disk
+        NSUserDefaults.standardUserDefaults().synchronize()
+        
+        print("Current count: \(currentCount)")
+        
         return true
     }
 
