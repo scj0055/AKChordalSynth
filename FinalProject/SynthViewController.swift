@@ -25,7 +25,7 @@ class SynthViewController: UIViewController {
     var currentRibbonNote = 0
     var masterVolume = 80
     
-    var enableRibbonController = true
+    var enableRibbonController = false
     
     var loadCount = 0
     
@@ -68,6 +68,7 @@ class SynthViewController: UIViewController {
     
     @IBOutlet weak var masterVolumeSlider: UISlider!
     
+    @IBOutlet weak var enableRibbon: UISwitch!
     /*
     //
     MARK: LIFECYCLE
@@ -78,15 +79,24 @@ class SynthViewController: UIViewController {
         
         super.viewDidLoad()
         
+        
+        
         // set the labels for the UI
         self.octaveLabel.text = "Current Octave: \(self.currentOctave)"
         self.seventhLabel.text = "7th Chords: \(majorOrMinorSeventh)"
         self.currentPatchName.text = "Current Patch: \(currentPatch)"
         
-        loadPatch(self.currentPatch)
+        enableRibbon.setOn(false, animated: true)
+        self.enableRibbonController = self.enableRibbon.on
+        
+        print("Ribbon controller is: \(enableRibbonController)")
+        
+        dispatch_async(dispatch_get_main_queue(), {
+            self.loadPatch(self.currentPatch)
+            return
+        })
         
         print(loadCount)
-        
         
     }
     
@@ -98,6 +108,7 @@ class SynthViewController: UIViewController {
         if currentCount > 3 {
             showRateMe()
         }
+        
     }
     
     /*
@@ -143,6 +154,7 @@ class SynthViewController: UIViewController {
     func loadPatch(patchToLoad: String) {
         
         print("Loading patch. AudioKit Started: \(self.isAudioKitStarted)")
+        printDebug()
         
         AudioKit.stop()
         self.isAudioKitStarted = false
@@ -170,10 +182,27 @@ class SynthViewController: UIViewController {
         AudioKit.start()
         self.isAudioKitStarted = true
         
+        stopAllNotes()
+        
         print("Patch Loaded. AudioKit Started: \(self.isAudioKitStarted)")
         
         self.loadCount++
         
+    }
+    
+    func printDebug() {
+        
+        print("*** DEBUG LOG ***")
+        print("Current Octave: \(self.currentOctave)")
+        print("Current Patch: \(self.currentPatch)")
+        print("Seventh: \(self.majorOrMinorSeventh)")
+        print("Chord Type: \(self.currentChordType)")
+        print("Note 1: \(self.note1)")
+        print("Note 2: \(self.note2)")
+        print("Note 3: \(self.note3)")
+        print("Current Ribbon Note: \(self.currentRibbonNote)")
+        print("MasterVolume: \(self.masterVolume)")
+        print("*** END DEBUG LOG ***")
     }
     
     /*
@@ -184,26 +213,29 @@ class SynthViewController: UIViewController {
     
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
         
-        if let touch = touches.first {
+        if enableRibbonController {
             
-            if touch.view!.accessibilityIdentifier! == "ribbon" {
+            if let touch = touches.first {
                 
-                let position = touch.locationInView(self.view)
-                let noteVal = calcNoteValue(position.y)
-                
-                if noteVal != self.currentRibbonNote {
+                if touch.view!.accessibilityIdentifier! == "ribbon" {
                     
-                    if loadCount == 1 {
-                        playRibbonNote(noteVal + 1)
+                    let position = touch.locationInView(self.view)
+                    let noteVal = calcNoteValue(position.y)
+                    
+                    print("noteVal: \(noteVal)")
+                    print("curr ribbon: \(self.currentRibbonNote)")
+                    
+                    if noteVal != self.currentRibbonNote {
+                        playRibbonNote()
                         print("Note played: \(noteVal + 1)")
                     }
                     
+                    self.currentRibbonNote = noteVal
                 }
-                
-                self.currentRibbonNote = noteVal
-                
             }
+        
         }
+        
     }
     
     /// Helper function that decides which note to play for the ribbon controller
@@ -219,36 +251,45 @@ class SynthViewController: UIViewController {
         
     }
     
+    /*
+    //
+    MARK: SOUND CONTROL
+    //
+    */
+    
     /// Plays a note on the ribbon controller, based on the current note value
     /// -Parameter currentNote: the note to play
     
-    func playRibbonNote(currentNote: Int) {
+    func playRibbonNote() {
         
-        switch currentNote {
+        print("MIDI Note Played - Ribbon: \(self.currentRibbonNote)")
+        
+        switch self.currentRibbonNote {
         case 1:
-            playNote(note1 - 12)
+            sampler.playNote(
+                self.note1 - 12, velocity: self.masterVolume, channel: 1)
         case 2:
-            playNote(note2 - 12)
+            sampler.playNote(self.note2 - 12, velocity: self.masterVolume, channel: 1)
         case 3:
-            playNote(note3 - 12)
+            sampler.playNote(self.note3 - 12, velocity: self.masterVolume, channel: 1)
         case 4:
-            playNote(note1)
+            sampler.playNote(self.note1, velocity: self.masterVolume, channel: 1)
         case 5:
-            playNote(note2)
+            sampler.playNote(self.note2, velocity: self.masterVolume, channel: 1)
         case 6:
-            playNote(note3)
+            sampler.playNote(self.note3, velocity: self.masterVolume, channel: 1)
         case 7:
-            playNote(note1 + 12)
+            sampler.playNote(self.note1 + 12, velocity: self.masterVolume, channel: 1)
         case 8:
-            playNote(note2 + 12)
+            sampler.playNote(self.note2 + 12, velocity: self.masterVolume, channel: 1)
         case 9:
-            playNote(note3 + 12)
+            sampler.playNote(self.note3 + 12, velocity: self.masterVolume, channel: 1)
         case 10:
-            playNote(note1 + 24)
+            sampler.playNote(self.note1 + 24, velocity: self.masterVolume, channel: 1)
         case 11:
-            playNote(note2 + 24)
+            sampler.playNote(self.note2 + 24, velocity: self.masterVolume, channel: 1)
         default:
-            playNote(note1)
+            sampler.playNote(self.note1, velocity: self.masterVolume, channel: 1)
         }
         
     }
@@ -258,76 +299,61 @@ class SynthViewController: UIViewController {
     
     func stopRibbonNote(currentNote: Int) {
         
-        switch currentNote {
+        switch self.currentRibbonNote {
         case 1:
-            stopNote(note1 - 12)
+            sampler.stopNote(self.note1 - 12, channel: 1)
         case 2:
-            stopNote(note2 - 12)
+            sampler.stopNote(self.note2 - 12, channel: 1)
         case 3:
-            stopNote(note3 - 12)
+            sampler.stopNote(self.note3 - 12, channel: 1)
         case 4:
-            stopNote(note1)
+            sampler.stopNote(self.note1, channel: 1)
         case 5:
-            stopNote(note2)
+            sampler.stopNote(self.note2, channel: 1)
         case 6:
-            stopNote(note3)
+            sampler.stopNote(self.note3, channel: 1)
         case 7:
-            stopNote(note1 + 12)
+            sampler.stopNote(self.note1 + 12, channel: 1)
         case 8:
-            stopNote(note2 + 12)
+            sampler.stopNote(self.note2 + 12, channel: 1)
         case 9:
-            stopNote(note3 + 12)
+            sampler.stopNote(self.note3 + 12, channel: 1)
         case 10:
-            stopNote(note1 + 24)
+            sampler.stopNote(self.note1 + 24, channel: 1)
         case 11:
-            stopNote(note2 + 24)
+            sampler.stopNote(self.note2 + 24, channel: 1)
         default:
-            stopNote(note1)
+            sampler.stopNote(self.note1, channel: 1)
         }
         
     }
-    
-    /*
-    //
-    MARK: SOUND CONTROL
-    //
-    */
     
     /// Plays a chord, based on the current notes to be played.
     /// -Attribution: AudioKit documentation
     
     func playChord() {
         
-        sampler.playNote(self.note1, velocity: self.masterVolume, channel: 0)
-        sampler.playNote(self.note2, velocity: self.masterVolume, channel: 0)
-        sampler.playNote(self.note3, velocity: self.masterVolume, channel: 0)
+        sampler.playNote(self.note1, velocity: self.masterVolume, channel: 1)
+        sampler.playNote(self.note2, velocity: self.masterVolume, channel: 1)
+        sampler.playNote(self.note3, velocity: self.masterVolume, channel: 1)
     }
     
     /// Plays a chord, based on the current notes to be played.
     /// -Attribution: AudioKit documentation
     
     func stopChord() {
-        sampler.stopNote(self.note1, channel: 0)
-        sampler.stopNote(self.note2, channel: 0)
-        sampler.stopNote(self.note3, channel: 0)
+        sampler.stopNote(self.note1, channel: 1)
+        sampler.stopNote(self.note2, channel: 1)
+        sampler.stopNote(self.note3, channel: 1)
     }
     
-    /// Plays a single note
-    /// -Attribution: AudioKit documentation
-    
-    func playNote(note: Int) {
+    // stops all possible notes
+    func stopAllNotes() {
         
-        if self.isAudioKitStarted {
-            sampler.playNote(note, velocity: self.masterVolume, channel: 0)
-        } 
-    }
-    
-    /// Stops a single note
-    /// -Attribution: AudioKit documentation
-    
-    func stopNote(note: Int) {
+        for index in 1...127 {
+            sampler.stopNote(index, channel:1)
+        }
         
-        sampler.stopNote(note, channel: 0)
     }
     
     /// Helper function - takes in the tag value of a button and calculates the chord value
@@ -705,5 +731,9 @@ class SynthViewController: UIViewController {
     @IBAction func masterVolumeModified(sender: UISlider) {
         self.masterVolume = Int(floor(masterVolumeSlider.value))
         print("Master Volume: \(masterVolume)")
+    }
+    @IBAction func enableRibbonAction(sender: UISwitch) {
+        self.enableRibbonController = sender.on
+        print("Ribbon Enabled: \(self.enableRibbonController)")
     }
 }

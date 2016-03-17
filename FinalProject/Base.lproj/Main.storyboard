@@ -560,6 +560,18 @@
                                             <segue destination="mUZ-5d-mac" kind="show" identifier="showInstructions" animates="NO" id="Om9-yh-Dky"/>
                                         </connections>
                                     </button>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wUQ-xI-6Ri">
+                                        <rect key="frame" x="589" y="136" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="enableRibbonAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Spr-i7-HnJ"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enable Ribbon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RhJ-7A-IhZ">
+                                        <rect key="frame" x="698" y="141" width="136" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <accessibility key="accessibilityConfiguration" identifier="controlPanel"/>
@@ -575,6 +587,7 @@
                         <outlet property="dFdbkSlider" destination="vVO-Sf-GSj" id="gKT-UQ-Bye"/>
                         <outlet property="dMixSlider" destination="qO4-u2-Ok4" id="6iY-Lr-JgI"/>
                         <outlet property="dTimeSlider" destination="GPI-SR-Wka" id="Z1l-uV-ISa"/>
+                        <outlet property="enableRibbon" destination="wUQ-xI-6Ri" id="brs-sx-HNZ"/>
                         <outlet property="masterVolumeSlider" destination="yzq-Jo-FZE" id="3kF-Uy-QqE"/>
                         <outlet property="octaveLabel" destination="PB0-6t-nRx" id="XqQ-q4-55i"/>
                         <outlet property="reverbMixSlider" destination="oNw-0G-WQB" id="Ruo-zI-Sqm"/>
@@ -674,7 +687,7 @@ the output level of the instrument.</string>
                                 <rect key="frame" x="0.0" y="28" width="1024" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Sh8-Zi-AhX" id="JE3-nq-253">
-                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rgd-zh-2k2">
