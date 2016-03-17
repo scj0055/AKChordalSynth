@@ -85,12 +85,6 @@ class SynthViewController: UIViewController {
         
         loadPatch(self.currentPatch)
         
-        let defaults = NSUserDefaults.standardUserDefaults()
-        
-        let userDefaultVolume = defaults.doubleForKey("master_volume")
-        
-        self.masterVolume = Int(floor(userDefaultVolume))
-        
         print(loadCount)
         
         

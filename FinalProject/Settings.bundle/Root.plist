@@ -56,34 +56,6 @@
 			<key>AutocorrectionType</key>
 			<string>No</string>
 		</dict>
-		<dict>
-			<key>Type</key>
-			<string>PSToggleSwitchSpecifier</string>
-			<key>Title</key>
-			<string>Ribbon Controller Enabled</string>
-			<key>Key</key>
-			<string>ribbon_preference</string>
-			<key>DefaultValue</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSGroupCell</string>
-			<key>master_volume</key>
-			<string>Master Volume</string>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>PSSliderSpecifier</string>
-			<key>Key</key>
-			<string>master_volume</string>
-			<key>DefaultValue</key>
-			<integer>80</integer>
-			<key>MinimumValue</key>
-			<integer>1</integer>
-			<key>MaximumValue</key>
-			<integer>127</integer>
-		</dict>
 	</array>
 </dict>
 </plist>
